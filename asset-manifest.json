@@ -1,13 +1,11 @@
 {
   "files": {
-    "main.css": "/govindu-myportfolio/static/css/main.048a2fd5.css",
-    "main.js": "/govindu-myportfolio/static/js/main.3a0651fb.js",
-    "index.html": "/govindu-myportfolio/index.html",
-    "main.048a2fd5.css.map": "/govindu-myportfolio/static/css/main.048a2fd5.css.map",
-    "main.3a0651fb.js.map": "/govindu-myportfolio/static/js/main.3a0651fb.js.map"
+    "main.css": "/govindu-myportfolio/static/css/main.4d57eee1.css",
+    "main.js": "/govindu-myportfolio/static/js/main.6bfe9bba.js",
+    "index.html": "/govindu-myportfolio/index.html"
   },
   "entrypoints": [
-    "static/css/main.048a2fd5.css",
-    "static/js/main.3a0651fb.js"
+    "static/css/main.4d57eee1.css",
+    "static/js/main.6bfe9bba.js"
   ]
 }
