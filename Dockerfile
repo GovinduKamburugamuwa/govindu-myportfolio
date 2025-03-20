@@ -2,6 +2,8 @@ FROM node:20
 
 WORKDIR /app
 
+RUN npm install -g serve
+
 # Install backend dependencies
 COPY contact-form-backend/package*.json ./
 RUN npm install
