@@ -12,6 +12,8 @@ COPY . .
 # Build frontend
 RUN npm run build
 
+RUN npm install -g serve
+
 # Expose port
 EXPOSE 5000
 ENV PORT=5000
