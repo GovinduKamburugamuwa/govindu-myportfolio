@@ -2,40 +2,29 @@ FROM node:20
 
 WORKDIR /app
 
-RUN npm install -g serve
-
-# Install backend dependencies
-COPY contact-form-backend/package*.json ./
-RUN npm install
-
-# Copy backend files
-COPY contact-form-backend/ ./
-
-# Install frontend dependencies
-WORKDIR /app/frontend
+# Copy package files first for better caching
 COPY package*.json ./
 RUN npm install
 
-# Copy frontend files
-COPY public ./public
-COPY src ./src
-COPY *.js ./
-COPY *.json ./
+# Copy backend package files
+COPY contact-form-backend/package*.json ./contact-form-backend/
+WORKDIR /app/contact-form-backend
+RUN npm install
+WORKDIR /app
+
+# Copy all project files
+COPY . .
 
 # Build frontend
 RUN npm run build
 
-# Copy build files to where backend expects them
-RUN mkdir -p /app/build
-RUN cp -r /app/frontend/build/* /app/build/
-
-# Set working directory for execution
-WORKDIR /app
+# Install serve globally
+RUN npm install -g serve
 
 # Expose port
 EXPOSE 5000
 ENV PORT=5000
 ENV NODE_ENV=production
 
-# Start the server
-CMD ["node", "server.js"]
+# Use Node.js backend server
+CMD ["node", "contact-form-backend/server.js"]
