@@ -18,4 +18,4 @@ ENV PORT=5000
 ENV NODE_ENV=production
 
 # Start backend server
-CMD ["node", "/app/contact-form-backend/server.js"]
+CMD ["node", "server.js"]
