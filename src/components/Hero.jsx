@@ -116,7 +116,7 @@ const Hero = () => {
                 >
                   I'm{' '}
                   <span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
-                    Govindu Kamburgaumwau
+                    Govindu Kamburgamuwa
                   </span>
                 </motion.h2>
                 <motion.h3 
@@ -195,7 +195,7 @@ const Hero = () => {
                     'text-gray-600 group-hover:text-blue-500'}`} />
                 </motion.a>
                 <motion.a
-                  href="https://www.linkedin.com/in/govindu-oshada/
+                  href="https://www.linkedin.com/in/govindu-oshada/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`group relative p-3 sm:p-4 rounded-xl backdrop-blur-sm
