@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/govindu-myportfolio/static/css/main.4d57eee1.css",
-    "main.js": "/govindu-myportfolio/static/js/main.6bfe9bba.js",
+    "main.js": "/govindu-myportfolio/static/js/main.09a40e8f.js",
     "index.html": "/govindu-myportfolio/index.html"
   },
   "entrypoints": [
     "static/css/main.4d57eee1.css",
-    "static/js/main.6bfe9bba.js"
+    "static/js/main.09a40e8f.js"
   ]
 }

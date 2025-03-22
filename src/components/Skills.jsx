@@ -24,7 +24,7 @@ const Skills = () => {
     },
     { 
       name: "ExpressJs", 
-      imgSrc: "https://github-production-user-asset-6210df.s3.amazonaws.com/74038190/238200441-1a797f46-efe4-41e6-9e75-5303e1bbcbfa.gif?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250319%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250319T111656Z&X-Amz-Expires=300&X-Amz-Signature=7e1d1853603049c54f822036f7744eea1705cba9cdd8d8b7120bddb423906825&X-Amz-SignedHeaders=host",
+      imgSrc: "https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/1a797f46-efe4-41e6-9e75-5303e1bbcbfa",
       color: "#F05032"
     },
     { 
