@@ -58,8 +58,13 @@ const Contact = () => {
     setError('');
     setSuccess(false);
     
+    // API URL - use different URL based on environment
+    const API_URL = process.env.NODE_ENV === 'production'
+      ? 'https://govindu-portfolio-production.up.railway.app/api/contact' // Change this to your actual Railway URL
+      : 'http://localhost:5000/api/contact';
+    
     try {
-      const response = await fetch('http://localhost:5000/api/contact', {
+      const response = await fetch(API_URL, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -2,20 +2,20 @@ FROM node:20
 
 WORKDIR /app
 
-# Copy package files first for better caching
-COPY package*.json ./
+# Copy only backend files
+WORKDIR /app/contact-form-backend
+
+# Copy package files for backend
+COPY contact-form-backend/package*.json ./
 RUN npm install
 
-# Copy all project files
-COPY . .
-
-# Build frontend
-RUN npm run build
+# Copy backend code
+COPY contact-form-backend/ ./
 
 # Expose port
 EXPOSE 5000
 ENV PORT=5000
 ENV NODE_ENV=production
 
-# Use Node.js backend server
+# Start backend server
 CMD ["node", "server.js"]

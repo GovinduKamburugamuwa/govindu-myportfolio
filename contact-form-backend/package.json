@@ -1,56 +1,23 @@
 {
-  "name": "govindu-portfolio",
-  "version": "0.1.0",
-  "private": true,
+  "name": "contact-form-backend",
+  "version": "1.0.0",
+  "description": "Backend API for contact form",
   "main": "server.js",
-  "homepage": "https://govindukamburugamuwa.github.io/govindu-myportfolio",
-  "dependencies": {
-    "cra-template": "1.2.0",
-    "framer-motion": "^11.18.0",
-    "lucide-react": "^0.471.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^7.3.0",
-    "react-scripts": "5.0.1",
-    "cors": "^2.8.5",
-    "dotenv": "^16.4.7",
-    "express": "^4.21.2",
-    "mongodb": "^6.14.2",
-    "mongoose": "^8.12.1",
-    "twilio": "^5.5.0"
-  },
   "scripts": {
     "start": "node server.js",
-    "build": "set \"GENERATE_SOURCEMAP=false\" && react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "client": "react-scripts start",
-    "dev": "concurrently \"npm run start\" \"npm run client\""
+    "dev": "nodemon server.js"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^7.5.0",
+    "twilio": "^4.15.0"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "concurrently": "^8.2.0",
-    "gh-pages": "^6.3.0",
-    "web-vitals": "^4.2.4"
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=16.0.0"
   }
 }

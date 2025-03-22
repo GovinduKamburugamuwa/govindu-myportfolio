@@ -2,7 +2,6 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const dotenv = require('dotenv');
-const path = require('path'); // Add this line
 
 // Load environment variables
 dotenv.config();
@@ -11,8 +10,12 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// Middleware
-app.use(cors());
+// Middleware with CORS configured for GitHub Pages
+app.use(cors({
+  origin: ['https://govindu-portfolio.github.io', 'http://localhost:3000'],
+  methods: ['GET', 'POST'],
+  credentials: true
+}));
 app.use(express.json());
 
 // Connect to MongoDB
@@ -104,13 +107,9 @@ app.post('/api/contact', async (req, res) => {
   }
 });
 
-// Serve static files from the React build directory
-app.use(express.static(path.join(__dirname, 'build')));
-
-// For any request that doesn't match an API route, send the React app
-app.get('*', (req, res) => {
-  console.log('Serving index.html from:', path.join(__dirname, 'build', 'index.html'));
-  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+// Add health check endpoint
+app.get('/health', (req, res) => {
+  res.status(200).json({ status: 'ok' });
 });
 
 // Start server
