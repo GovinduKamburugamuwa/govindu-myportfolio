@@ -42,12 +42,6 @@ const Skills = () => {
       imgSrc: "https://user-images.githubusercontent.com/74038190/212257465-7ce8d493-cac5-494e-982a-5a9deb852c4b.gif",
       color: "#E34F26"
     },
-
-    { 
-      name: "Bootstrap", 
-      imgSrc: "https://user-images.githubusercontent.com/74038190/212280805-9bcb336b-8c55-46a8-abf8-ff286ab55472.gif",
-      color: "#F24E1E"
-    },
     { 
       name: "Android Studio", 
       imgSrc: "https://user-images.githubusercontent.com/74038190/212281763-e6ecd7ef-c4aa-45b6-a97c-f33f6bb592bd.gif",
@@ -60,7 +54,7 @@ const Skills = () => {
     },
     { 
       name: "Firebase", 
-      imgSrc: "https://github-production-user-asset-6210df.s3.amazonaws.com/74038190/238200431-3c16d4f2-b757-4c70-8f42-43d5dddd2c36.gif?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250319%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250319T112705Z&X-Amz-Expires=300&X-Amz-Signature=0481439585284d44aa63d97ccc0de522dcf11c03a0b2e2dcc6c3cd83bea4b406&X-Amz-SignedHeaders=host",
+      imgSrc: "https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/3c16d4f2-b757-4c70-8f42-43d5dddd2c36",
       color: "#2496ED"
     },   { 
       name: "HTML", 
@@ -76,15 +70,7 @@ const Skills = () => {
       imgSrc: "https://user-images.githubusercontent.com/74038190/212257454-16e3712e-945a-4ca2-b238-408ad0bf87e6.gif",
       color: "#F7DF1E"
     },
-      { 
-      name: "Git", 
-      imgSrc: "https://user-images.githubusercontent.com/74038190/212281775-b468df30-4edc-4bf8-a4ee-f52e1aaddc86.gif",
-      color: "#2496ED"
-    },   { 
-      name: "Git", 
-      imgSrc: "https://user-images.githubusercontent.com/74038190/212281775-b468df30-4edc-4bf8-a4ee-f52e1aaddc86.gif",
-      color: "#2496ED"
-    },
+
     
     
   ];
