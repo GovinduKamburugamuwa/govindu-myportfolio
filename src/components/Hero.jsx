@@ -216,7 +216,7 @@ const Hero = () => {
                     'text-gray-600 group-hover:text-blue-500'}`} />
                 </motion.a>
                 <motion.a
-                  href="mailto:GovinduKamburugamuwa@gmail.com"
+                  href="#"
                   className={`group relative p-3 sm:p-4 rounded-xl backdrop-blur-sm
                     transition-all duration-300 
                     ${isDarkMode ? 
