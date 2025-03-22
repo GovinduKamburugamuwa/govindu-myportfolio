@@ -195,7 +195,7 @@ const Hero = () => {
                     'text-gray-600 group-hover:text-blue-500'}`} />
                 </motion.a>
                 <motion.a
-                  href="https://www.linkedin.com/in/govindu-kamburugamuwa"
+                  href="https://www.linkedin.com/in/govindu-oshada/
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`group relative p-3 sm:p-4 rounded-xl backdrop-blur-sm
