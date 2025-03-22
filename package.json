@@ -2,7 +2,7 @@
   "name": "govindu-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://govindu-portfolio.github.io",
+  "homepage": "https://govindukamburugamuwa.github.io/govindu-myportfolio/",
   "dependencies": {
     "framer-motion": "^10.16.4",
     "lucide-react": "^0.274.0",
