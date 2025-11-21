@@ -257,12 +257,8 @@ const Hero = () => {
                 <div className={`relative flex items-center w-full aspect-[3/4] rounded-2xl overflow-hidden
                   ${isDarkMode ? 'bg-gray-800' : 'bg-gray-100'} shadow-xl`}>
                   <motion.img
-                    src={`${process.env.PUBLIC_URL}/profile.jpg`}
+                    src="/govindu-myportfolio/profile.jpg"
                     alt="Profile"
-                    onError={(e) => {
-                      console.log('Image failed to load, trying fallback');
-                      e.target.src = '/govindu-myportfolio/profile.jpg';
-                    }}
                     className="w-full h-full object-cover opacity-95 group-hover:opacity-100 
                       transition-all duration-700"
                     initial={{ scale: 1.2 }}
