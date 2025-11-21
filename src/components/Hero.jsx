@@ -257,7 +257,7 @@ const Hero = () => {
                 <div className={`relative flex items-center w-full aspect-[3/4] rounded-2xl overflow-hidden
                   ${isDarkMode ? 'bg-gray-800' : 'bg-gray-100'} shadow-xl`}>
                   <motion.img
-                    src="/govindu-myportfolio/profile.jpg"
+                    src={`${process.env.PUBLIC_URL}/profile.jpg`}
                     alt="Profile"
                     className="w-full h-full object-cover opacity-95 group-hover:opacity-100 
                       transition-all duration-700"
