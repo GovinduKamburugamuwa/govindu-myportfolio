@@ -10,6 +10,8 @@ import {
   defaultTransition,
 } from './AnimationConfig';
 
+const roles = ["An Undergraduate", "Full Stack Developer", "Researcher"];
+
 const Hero = () => {
   const { isDarkMode } = useTheme();
   const [displayText, setDisplayText] = useState('');
@@ -17,8 +19,6 @@ const Hero = () => {
   const [isTyping, setIsTyping] = useState(true);
 
   const sectionRef = useRef(null);
-
-  const roles = ["An Undergraduate", "Full Stack Developer", "Researcher"];
 
   const isInView = useInView(sectionRef, { 
     once: false, // Changed from true to false
@@ -63,7 +63,7 @@ const Hero = () => {
       
       return () => clearTimeout(timeout);
     }
-  }, [displayText, currentRoleIndex, isTyping, roles]);
+  }, [displayText, currentRoleIndex, isTyping]); // Removed 'roles' from dependencies
 
   return (
     <motion.section 
