@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/govindu-myportfolio/static/css/main.0f700a2c.css",
+    "main.js": "/govindu-myportfolio/static/js/main.8b564824.js",
+    "index.html": "/govindu-myportfolio/index.html",
+    "main.0f700a2c.css.map": "/govindu-myportfolio/static/css/main.0f700a2c.css.map",
+    "main.8b564824.js.map": "/govindu-myportfolio/static/js/main.8b564824.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0f700a2c.css",
+    "static/js/main.8b564824.js"
+  ]
+}
