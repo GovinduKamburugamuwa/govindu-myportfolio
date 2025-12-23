@@ -185,7 +185,7 @@ const Contact = () => {
                   name="name"
                   value={formData.name}
                   onChange={handleInputChange}
-                  placeholder="John Doe"
+                  placeholder="Name"
                   required
                   className={`w-full px-4 py-3 rounded-lg outline-none ${
                     isDarkMode ? 'bg-gray-700 text-white' : 'bg-gray-100 text-gray-900'
@@ -203,7 +203,7 @@ const Contact = () => {
                   name="email"
                   value={formData.email}
                   onChange={handleInputChange}
-                  placeholder="john@example.com"
+                  placeholder="email@example.com"
                   required
                   className={`w-full px-4 py-3 rounded-lg outline-none ${
                     isDarkMode ? 'bg-gray-700 text-white' : 'bg-gray-100 text-gray-900'
